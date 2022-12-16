@@ -209,7 +209,7 @@
     }
 
     &__details {
-      padding: 0 1rem;
+      padding: 1rem 3rem;
     }
 
     // BACK SIDE STYLING
@@ -224,6 +224,10 @@
 
     &__price-box {
       margin-bottom: 3rem;
+    }
+
+    &__price-value {
+      font-size: 4rem;
     }
   }
 }

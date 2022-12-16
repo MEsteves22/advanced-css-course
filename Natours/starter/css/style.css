@@ -515,7 +515,7 @@ body {
     transform: rotateY(0);
   }
   .card__details {
-    padding: 0 1rem;
+    padding: 1rem 3rem;
   }
   .card__cta {
     position: relative;
@@ -527,6 +527,9 @@ body {
   }
   .card__price-box {
     margin-bottom: 3rem;
+  }
+  .card__price-value {
+    font-size: 4rem;
   }
 }
 
@@ -822,7 +825,7 @@ body {
 .header {
   position: relative;
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
+  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero-small.jpg");
   background-size: cover;
   background-position: top;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -831,6 +834,11 @@ body {
     * This is called nesting the selectors
     * "header" will be happened at "&"
     */
+}
+@media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  .header {
+    background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
+  }
 }
 @media (max-width: 37.5em) {
   .header {
